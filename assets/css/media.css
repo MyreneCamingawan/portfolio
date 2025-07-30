@@ -29,6 +29,8 @@
         bottom: 80px;
     }
 
+    .line_svg {display: none;}
+
     /* ABOUT */
     /* .about_info {width: 100% } */
 }

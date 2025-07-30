@@ -66,6 +66,10 @@
                 <div class="bnr_btn">
                     <button type="button" id="cv_btn" class="btn_style" >My CV</button>
                 </div>
+
+                <svg class="line_svg" viewBox="0 0 600 200">
+                    <path class="path" d="M50,100 C100,50 150,150 200,100 S300,50 350,100 S450,150 500,100" />
+                </svg>
             </div>
         </div>
     </div>
@@ -74,10 +78,11 @@
         <div class="wrapper">
             <div class="about_header">
                 <h2>About</h2>
+                <figure >
+                    <img class="pinwheel" src="./assets/images/pin-wheel.png" alt="pinwheel"/>
+                </figure>
             </div>
-            <figure >
-                <img class="pinwheel" src="./assets/images/pin-wheel.png" alt="pinwheel"/>
-            </figure>
+            
             <div class="about_con">
                 <div data-aos="fade-right" data-aos-duration="2000"  data-aos-easing="ease-in-sine" class="about_info">
                     <p class=""> A flexible and adaptive individual with good communication skills. Since 2021, I've been tutoring high school and elementary students. I am a former head-coordinator scholar of the <a href="https://www.facebook.com/EDMInayawan/" target="_blank">Enfants Du Mekong-Inayawan</a> program and a former treasurer of the <a href="https://www.google.com/maps/place/Cebu+Normal+University+-+Main+Campus/@10.3017692,123.8940421,17z/data=!4m10!1m2!2m1!1scnu!3m6!1s0x33a99eb46ebc2739:0xc22cee387ab970b4!8m2!3d10.3016899!4d123.8967426!15sCgNjbnWSARFwdWJsaWNfdW5pdmVyc2l0eeABAA!16zL20vMDdwbmc1?entry=ttu&amp;g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">Cebu Normal University</a>-Filipino Department. </p></div>
@@ -90,7 +95,7 @@
 
     <div id="contact">
         <div class="wrapper">
-            <div class="about_header">
+            <div class="contact_header">
                 <h2>Contact</h2>
             </div>
             <div class="contact_con">
@@ -164,6 +169,13 @@
                 scrub: true
             }
         })
+
+        /* GSAP SVG ANIMATION */
+        gsap.to('.path', {
+            strokeDashoffset: 0,
+            duration: 20,
+            ease: "ease-out",
+        });
 
        
     </script>
